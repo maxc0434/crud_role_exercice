@@ -1,5 +1,42 @@
 body {
-    background-color: rgb(220, 87, 100);
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: lowercase;
 }
-
-
+.presentSite{
+    font-family: Georgia, serif;
+    font-size: 19px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    margin-bottom: 50px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.btn{
+    width: 150px;
+}
+.body.register{
+    background-color: aqua;
+}

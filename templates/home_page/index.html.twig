@@ -4,20 +4,19 @@
 
 {% block body %}
 <style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
 </style>
 
-    <h1>PAGE D'ACCUEIL ✅</h1>
-
+    <h1>✅ Welcome To The Bad Worldplay Site ✅</h1>
+    <div class="presentSite"> Lubri-Fion... <br> Parc-d'attrap-fion ... <br> et autres joyeusetées  </div>
     {% if app.user == false %}
-        <a href="{{path('app_register') }}">S'inscrire</a>
+        <a href="{{path('app_register') }}" class="btn btn-outline-success" >S'inscrire</a>
             <div>
-        <a href="{{path('app_login') }}"> Connexion</a>
+        <a href="{{path('app_login') }}" class="btn btn-outline-primary" > Connexion</a>
     </div>
     {% else%}
         <div>
-            <a href="{{path('app_logout')}}">Deconnexion</a>
+            <a href="{{path('app_logout')}}" >Deconnexion</a>
         </div>
         </div>
             <a href="{{path('app_dashboard_user', {'id': app.user.id} )}}">tableau de bord utilisateur</a>
