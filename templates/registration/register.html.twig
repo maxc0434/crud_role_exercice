@@ -19,3 +19,12 @@
         <button type="submit" class="btn">S'inscrire</button>
     {{ form_end(registrationForm) }}
 {% endblock %}
+
+{# si tu veux faire qu'un seul fichier twig tu peux aussi tester les differentes options 
+on peut passer l'etat dans la vue, ou simplement, directement verifier si le champ existe dans le form par exemple 
+ en faisant 
+ {% if form.plainpassword is defined %}
+    ca affiche les champs mot de passe et termes
+ {%endif%}
+ Voila mr j'espere que c'est assez clair #}
+

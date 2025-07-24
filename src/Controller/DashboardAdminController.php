@@ -27,7 +27,9 @@ final class DashboardAdminController extends AbstractController
     public function update(Request $request, $id, UserRepository $UserRepo, EntityManagerInterface $entityManager): Response
     {
         $data = $entityManager->getRepository(User::class)->find($id);
-        $form = $this->createForm(RegistrationFormType::class, $data);
+        $form = $this->createForm(RegistrationFormType::class, $data, [//option pour enlever les options donc password et termes
+            'is_registration' => false,
+        ]);
         $form->handleRequest($request);
         if ( $form->isSubmitted()&& $form->isValid()){
             $entityManager->persist($data);
