@@ -1,0 +1,22 @@
+
+body {
+    background: conic-gradient(from 90deg, rgba(193, 209, 204, 1.000) 0.000deg, rgba(198, 204, 199, 1.000) 10.909deg, rgba(204, 198, 194, 1.000) 21.818deg, rgba(209, 193, 188, 1.000) 32.727deg, rgba(215, 188, 183, 1.000) 43.636deg, rgba(220, 183, 178, 1.000) 54.545deg, rgba(225, 178, 173, 1.000) 65.455deg, rgba(230, 174, 169, 1.000) 76.364deg, rgba(234, 170, 164, 1.000) 87.273deg, rgba(238, 166, 160, 1.000) 98.182deg, rgba(241, 163, 157, 1.000) 109.091deg, rgba(244, 160, 154, 1.000) 120.000deg, rgba(247, 158, 152, 1.000) 130.909deg, rgba(248, 157, 150, 1.000) 141.818deg, rgba(249, 156, 149, 1.000) 152.727deg, rgba(250, 156, 149, 1.000) 163.636deg, rgba(250, 156, 149, 1.000) 174.545deg, rgba(249, 157, 150, 1.000) 185.455deg, rgba(247, 159, 151, 1.000) 196.364deg, rgba(245, 161, 153, 1.000) 207.273deg, rgba(242, 164, 156, 1.000) 218.182deg, rgba(239, 168, 159, 1.000) 229.091deg, rgba(235, 171, 162, 1.000) 240.000deg, rgba(231, 176, 166, 1.000) 250.909deg, rgba(226, 180, 171, 1.000) 261.818deg, rgba(221, 185, 175, 1.000) 272.727deg, rgba(216, 190, 180, 1.000) 283.636deg, rgba(210, 196, 186, 1.000) 294.545deg, rgba(205, 201, 191, 1.000) 305.455deg, rgba(199, 206, 196, 1.000) 316.364deg, rgba(194, 211, 202, 1.000) 327.273deg, rgba(188, 216, 207, 1.000) 338.182deg, rgba(183, 221, 212, 1.000) 349.091deg, rgba(179, 225, 217, 1.000) 360.000deg);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: Georgia, serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: lowercase;
+}
+h1{
+
+}

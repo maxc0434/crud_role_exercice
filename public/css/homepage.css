@@ -1,0 +1,73 @@
+
+.titleHomepage{
+    font-size: 60px;
+}
+img{
+    width: 350px;
+}
+img.ramutchoImg1{
+    float: left;
+    margin-right: 150px;
+    position: relative;
+    right: 50px;
+}
+img.ramutchoImg2{
+    float: right;
+    margin-right: 150px;
+    position: relative;
+    left: 150px;
+}
+body {
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: Georgia, serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: lowercase;
+}
+.presentSite{
+    font-family: Georgia, serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    margin-bottom: 50px;
+    display: flex;
+
+
+}
+.textHomepage{
+    display: flex;
+    align-content: center;
+    font-size: large;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.btn-outline-success{
+    width: 150px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.btn-outline-primary{
+    width: 150px;
+    font-weight: 700;
+    margin-top: -10px;
+}

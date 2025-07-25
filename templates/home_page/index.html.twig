@@ -2,13 +2,20 @@
 
 {% block title %}Page d'Accueil{% endblock %}
 
-{% block body %}
-<style>
-    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
-</style>
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/homepage.css') }}">
+{% endblock %}
 
-    <h1>✅ Welcome To The Bad Worldplay Site ✅</h1>
-    <div class="presentSite"> Lubri-Fion... <br> Parc-d'attrap-fion ... <br> et autres joyeusetées  </div>
+
+{% block body %}
+
+    <h1 class="titleHomepage">✅ Welcome To The Bad Worldplay Site ✅</h1>
+    <div class="presentSite">
+    <img class="ramutchoImg1" src="https://www.programme-tv.net/imgre/fit/~1~tel~2024~12~27~b9ff286d-2fd7-466a-8745-94f72415cb06.jpeg/1200x600/crop-from/top/quality/80/focus-point/1177,520/le-bigdil-pourquoi-ramuncho-est-absent-de-la-nouvelle-version-du-jeu.jpg" alt="ramutcho1"> 
+    Lubri-Fion... <br> Parc-d'attrap-fion ... <br> et autres joyeusetées!  
+    <img class="ramutchoImg2" src="https://resize.programme-television.org/original/var/premiere/storage/images/news/tv/emissions-tele/il-n-avait-pas-envie-vincent-lagaf-revele-comment-il-a-convaincu-ramuncho-de-revenir-dans-le-bigdil-ce-soir-4737769/103085762-1-fre-FR/Il-n-avait-pas-envie-Vincent-Lagaf-revele-comment-il-a-convaincu-Ramuncho-de-revenir-dans-le-Bigdil-ce-soir.jpg" alt="ramutcho2">
+    </div>
+    <div class="textHomepage"> Inscris-toi gratuitement et profite d'un accès illimité à des jeux de mots toujours un peu plus nuls</div>
     {% if app.user == false %}
         <a href="{{path('app_register') }}" class="btn btn-outline-success" >S'inscrire</a>
             <div>
@@ -16,15 +23,15 @@
     </div>
     {% else%}
         <div>
-            <a href="{{path('app_logout')}}" >Deconnexion</a>
+            <a href="{{path('app_logout')}}" class="btn btn-outline-danger" >Deconnexion</a>
         </div>
         </div>
-            <a href="{{path('app_dashboard_user', {'id': app.user.id} )}}">tableau de bord utilisateur</a>
+            <a href="{{path('app_dashboard_user', {'id': app.user.id} )}}" class="btn btn-outline-primary" >tableau de bord utilisateur</a>
         <div>
     {%endif%}
     {% if is_granted("ROLE_ADMIN") %}
         <div>
-            <a href="{{path('app_dashboard_admin')}}">Admin tableau de bord</a>
+            <a href="{{path('app_dashboard_admin')}}" class="btn btn-outline-primary"> Tableau de bord Administrateur </a>
         </div>
     {%endif%}
 <div class="example-wrapper">

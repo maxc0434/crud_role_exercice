@@ -2,8 +2,14 @@
 
 {% block title %}Inscription{% endblock %}
 
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/registerpage.css') }}">
+{% endblock %}
+
+
 {% block body %}
-    <h1>S'inscrire</h1>
+
+    <h1 id="InscriptionTitle">S'inscrire</h1>
 
     {{ form_errors(registrationForm) }}
 
@@ -16,7 +22,7 @@
         }) }}
         {{ form_row(registrationForm.agreeTerms) }}
 
-        <button type="submit" class="btn">S'inscrire</button>
+        <button id="inscriptionBtn" type="submit" class="btn btn-secondary">S'inscrire</button>
     {{ form_end(registrationForm) }}
 {% endblock %}
 

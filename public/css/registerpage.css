@@ -1,0 +1,45 @@
+ 
+  body{ 
+    background: conic-gradient(from 90deg, rgba(69, 62, 100, 1.000) 0.000deg, rgba(69, 62, 100, 1.000) 27.692deg, rgba(102, 68, 101, 1.000) 27.692deg, rgba(102, 68, 101, 1.000) 55.385deg, rgba(134, 75, 103, 1.000) 55.385deg, rgba(134, 75, 103, 1.000) 83.077deg, rgba(167, 85, 105, 1.000) 83.077deg, rgba(167, 85, 105, 1.000) 110.769deg, rgba(200, 96, 107, 1.000) 110.769deg, rgba(200, 96, 107, 1.000) 138.462deg, rgba(231, 109, 109, 1.000) 138.462deg, rgba(231, 109, 109, 1.000) 166.154deg, rgba(255, 123, 112, 1.000) 166.154deg, rgba(255, 123, 112, 1.000) 193.846deg, rgba(255, 139, 115, 1.000) 193.846deg, rgba(255, 139, 115, 1.000) 221.538deg, rgba(255, 156, 118, 1.000) 221.538deg, rgba(255, 156, 118, 1.000) 249.231deg, rgba(255, 174, 121, 1.000) 249.231deg, rgba(255, 174, 121, 1.000) 276.923deg, rgba(255, 192, 124, 1.000) 276.923deg, rgba(255, 192, 124, 1.000) 304.615deg, rgba(255, 212, 128, 1.000) 304.615deg, rgba(255, 212, 128, 1.000) 332.308deg, rgba(255, 231, 131, 1.000) 332.308deg 360.000deg);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: Georgia, serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: lowercase;
+}
+#InscriptionTitle{
+    margin-bottom: 50px;
+    font-size: 4.5rem;
+}
+#registration_form_nom{
+    margin-left: 437px;
+}
+#registration_form_prenom{
+    margin-left: 356px;
+}
+#registration_form_email{
+    margin-left: 405px;
+}
+#registration_form_plainPassword_first{
+    margin-left: 236px;
+}
+#registration_form_plainPassword_second{
+    margin-left: 35px;
+}
+#registration_form_agreeTerms{
+    margin-left: 247px;
+}
+#inscriptionBtn{
+    margin-left: 556px;
+    font-size: x-large;
+}

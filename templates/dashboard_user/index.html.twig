@@ -2,9 +2,16 @@
 
 {% block title %}Hello DashboardUserController!{% endblock %}
 
-{% block body %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/userDashboard.css') }}">
+{% endblock %}
 
-<h1>Tableau de bord utilisateur</h1>
+
+{% block body %}
+ <a href="{{path('app_logout')}}" class="btn btn-outline-danger" >Deconnexion</a>
+ <a href="{{path('app_home_page')}}" class="btn btn-outline-primary" >Accueil</a>
+
+<h1 class="dashboardTitle">Tableau de bord utilisateur</h1>
 <div class="container">
     <div class="card">
         <div class="card-body">
@@ -16,7 +23,59 @@
     </div>
 </div>
 
+<h2> Voici le contenu gratuit :</h2>
 
+<div id="carouselExampleIndicators" class="carousel slide w-50 text-center p-5 ">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <div class="diapoBackground">
+            <p class="diapo1 "> Monsieur et Madame Moilfion ont un fils... <br> Comment s'appelle t'il? <br> Ramon</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="diapoBackground">
+            <p class="diapo2">Vous reprendrez bien un peu de Ros-biffle?!</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="diapoBackground">
+            <p class="diapo3">J'ai des rebords à mes épaulettes</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="diapoBackground">
+            <p class="diapo4">Quel est la différence entre une moule et un pull-over? <br> un pull-over ça moule, <br> et une moule ca pue l'ovaire</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="diapoBackground">
+            <p class="diapo5">Le nouvel ami de C3PO : <br> R2.mes.2 </p>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="diapoBackground">
+            <p class="diapo6">Mamouth écrase les prix</p>
+        </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
+<h3>Si tu en veux des moins mauvaises... Tu payes !</h3>
 
 {% endblock %}

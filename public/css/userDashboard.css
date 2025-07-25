@@ -1,0 +1,46 @@
+
+
+body {
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: Georgia, serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: lowercase;
+}
+
+.container{
+margin-bottom: 100px;
+}
+
+.diapoBackground{
+    background-color: whitesmoke;
+
+}
+.dashboardTitle{
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+h2 {
+  border: 2px solid whitesmoke;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+
+h3{
+  font-size: 50px;
+  border: 1px solid #dee2e6; /* couleur gris Bootstrap */
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
